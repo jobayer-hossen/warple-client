@@ -1,0 +1,177 @@
+.titleSection {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 70px;
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    color: #1A35C9;
+}
+
+.textOne {
+    display: flex;
+    justify-content: center;
+}
+
+.containerStyle {
+    padding: 75px 75px 0px 75px;
+    background-color: #FFD0CC;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+
+}
+
+.secondContainer {
+    height: 1097px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.rowStyle {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.tickMarkRow {
+    width: 500px;
+    display: flex;
+    text-align: center;
+    border-bottom: 2px solid #FFD0CC;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tickMarkText {
+    margin-left: 8px;
+}
+
+.tickMarkStyle {
+    color: #1A35C9;
+}
+
+.singleRow {
+    width: 70%;
+    display: flex;
+    margin-block: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 25px;
+
+}
+
+.textHandle {
+    margin-block: 0px;
+}
+
+.blueText{
+    color: #1A35C9;
+}
+
+.rowRightSide {
+    margin-left: 15px;
+    padding-top: 12px;
+}
+
+.backgroundPlain{
+    height: 600px;
+    padding-top: 30px;
+    background-image: url("../../../public/taskPhoto/plain.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position-x: 650px;
+    background-position-y: 100px;
+    position: absolute;
+    animation: backgroundAnimation 2s infinite alternate;
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 85% 80%;
+    }
+    100% {
+        background-position: 100% 110%;
+    }
+}
+
+.textThree {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.dualImages {
+    width: 100%;
+    height: 400px;
+    background-color: #FFD0CC;
+    background-image: url('../../../public/taskPhoto/plainTicket2.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30%, 50%;
+    background-position: 100% 100%;
+    
+}
+
+.plainOne {
+    position: absolute;
+}
+
+.plainBTN {
+    text-align: center;
+}
+
+.BTN {
+    color: white;
+    background-color: #1A35C9;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+
+}
+
+.arrow {
+    margin-left: 8px;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .containerStyle {
+        padding: 30px;
+    }
+
+    .secondContainer {
+        padding: 10px;
+        height: 1620px;
+        border-radius: 60px;
+    }
+
+    .tickMarkRow {
+        width: auto;
+        padding: auto;
+    }
+
+    .singleRow {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .backgroundPlain {
+        background-image: none;
+        position: inherit;
+        height: 0px;
+    }
+
+    .rowRightSide {
+        margin-left: 0px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
