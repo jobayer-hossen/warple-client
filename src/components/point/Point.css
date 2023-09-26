@@ -23,7 +23,7 @@
     color: #1A35C9;
 }
 
-#cardStyle{
+#cardStyle {
     padding-top: 250px;
 }
 
@@ -54,7 +54,8 @@
         width: 100%;
         margin: 0px;
     }
-    #cardStyle{
+
+    #cardStyle {
         padding-top: 0px;
     }
 }

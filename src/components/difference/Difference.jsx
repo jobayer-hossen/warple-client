@@ -12,7 +12,7 @@ import Fade from 'react-reveal/Fade';
 const Difference = () => {
     return (
         <div>
-            
+
             {/* title */}
             <Fade bottom>
                 <div id='titleSection'>

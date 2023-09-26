@@ -22,7 +22,7 @@
     padding-top: 60px;
 }
 
-#textFour{
+#textFour {
     font-size: 35px;
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@
     margin-block: 0px;
 }
 
-.blueText{
+.blueText {
     color: #1A35C9;
 }
 
@@ -92,7 +92,7 @@
     padding-top: 12px;
 }
 
-.backgroundPlain{
+.backgroundPlain {
     height: 600px;
     padding-top: 30px;
     background-image: url("../../../public/taskPhoto/plain.png");
@@ -103,10 +103,12 @@
     position: absolute;
     animation: backgroundAnimation 2s infinite alternate;
 }
+
 @keyframes backgroundAnimation {
     0% {
         background-position: 85% 80%;
     }
+
     100% {
         background-position: 100% 110%;
     }
@@ -122,7 +124,7 @@
     background-repeat: no-repeat;
     background-size: 30%, 50%;
     background-position: 100% 100%;
-    
+
 }
 
 .plainOne {
@@ -180,13 +182,16 @@
     .rowRightSide {
         margin-left: 0px;
     }
-    .title{
+
+    .title {
         font-size: 30px;
     }
-    .dualImages{
+
+    .dualImages {
         height: 270px;
     }
-    #textFour{
+
+    #textFour {
         font-size: 20px;
     }
 }

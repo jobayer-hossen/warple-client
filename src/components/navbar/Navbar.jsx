@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import './Navbar.css'
 import { FaBars, FaTimes } from "react-icons/fa";
 import brandIcon from '../../../public/taskPhoto/icon2.png'
-import Fade from 'react-reveal/Fade';
 
 
 const Navbar = () => {
@@ -15,7 +14,7 @@ const Navbar = () => {
 	};
 	return (
 		<>
-		<Fade top>
+
 			<header>
 				<img id='brandIcon' src={brandIcon} alt="" />
 				<nav ref={navRef}>
@@ -41,7 +40,7 @@ const Navbar = () => {
 					<FaBars />
 				</button>
 			</header>
-			</Fade>
+
 		</>
 	);
 };

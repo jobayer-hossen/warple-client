@@ -10,7 +10,7 @@ header {
 	border-bottom-right-radius: 20px;
 }
 
-#brandIcon{
+#brandIcon {
 	margin-left: 100px;
 }
 
@@ -47,7 +47,7 @@ nav {
 	margin-left: 350px;
 }
 
-#responsiveShowBtn{
+#responsiveShowBtn {
 	display: none;
 	padding: 4px 10px;
 	border-radius: 20px;
@@ -65,8 +65,8 @@ nav {
 		position: fixed;
 		top: -100vh;
 		left: 0;
-		height: 100%;
-		width: 100%;
+		height: 300px;
+		width: 400px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -75,12 +75,15 @@ nav {
 		background-color: white;
 		transition: 1s;
 	}
-	#responsiveShowBtn{
+
+	#responsiveShowBtn {
 		display: inherit;
 	}
-	#brandIcon{
+
+	#brandIcon {
 		margin: 0px;
 	}
+
 	header .responsiveNav {
 		transform: translateY(100vh);
 	}

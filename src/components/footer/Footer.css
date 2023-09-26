@@ -7,26 +7,27 @@
     padding: 20px;
     align-items: center;
     margin: auto;
-    
+
 }
 
 
-.footerLeftSide{
+.footerLeftSide {
     height: 200px;
     flex: 1;
 }
 
-.socialIcon{
+.socialIcon {
     padding-top: 135px;
-    
+
 }
-.socialLogo{
+
+.socialLogo {
     width: 35px;
     padding: 5px;
     opacity: 0.7;
 }
 
-.footerRightSide{
+.footerRightSide {
     display: flex;
     width: 100%;
     flex: 1;
@@ -48,10 +49,12 @@
         width: 100%;
         padding-top: 15px;
     }
-    .socialIcon{
+
+    .socialIcon {
         padding-top: 35px;
     }
-    .footerRightSide{
+
+    .footerRightSide {
         flex-direction: column;
         width: 100%;
     }
