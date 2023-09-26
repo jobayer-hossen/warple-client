@@ -2,46 +2,48 @@ import React, { useRef } from 'react';
 import './Navbar.css'
 import { FaBars, FaTimes } from "react-icons/fa";
 import brandIcon from '../../../public/taskPhoto/icon2.png'
+import Fade from 'react-reveal/Fade';
 
 
 const Navbar = () => {
-    const navRef = useRef();
+	const navRef = useRef();
 
 	const showNavbar = () => {
 		navRef.current.classList.toggle(
-			"responsive_nav"
+			"responsiveNav"
 		);
 	};
-    return (
+	return (
 		<>
-        <header>
-			<img src={brandIcon} alt="" />
-			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">My work</a>
-				<a href="/#">Blog</a>
-				<a href="/#">About me</a>
-                <a className='backGround-btn'>
-                ログイン・新規会員登録
-				{/* <img src={arrowIcon} alt="" /> */}
-                </a>
+		<Fade top>
+			<header>
+				<img id='brandIcon' src={brandIcon} alt="" />
+				<nav ref={navRef}>
+					<a href="/#">About</a>
+					<a href="/#">About</a>
+					<a href="/#">About</a>
+					<a className='backGroundBtn'>
+						ログイン・新規会員登録
+					</a>
+					<button
+						className="navBtn navCloseBtn"
+						onClick={showNavbar}>
+						<FaTimes />
+					</button>
+				</nav>
+				{/* only responsive Show element */}
+				<a id='responsiveShowBtn'>
+					員登録
+				</a>
 				<button
-					className="nav-btn nav-close-btn"
+					className="navBtn"
 					onClick={showNavbar}>
-					<FaTimes />
+					<FaBars />
 				</button>
-			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-		</header>
-
-
-
+			</header>
+			</Fade>
 		</>
-    );
+	);
 };
 
 export default Navbar;

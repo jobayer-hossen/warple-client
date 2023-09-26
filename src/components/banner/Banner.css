@@ -21,7 +21,7 @@
     padding-left: 200px;
     padding-top: 223px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -43,14 +43,24 @@
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .hero {
         width: 100%;
+        height: 65vh;
+        background-image: url("../../../public/taskPhoto/banner2.png");
+        height: 350px; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        
     }
     .heroContent {
         width: 100%;
         padding: 20px;
-        padding-top: 225px;
+        padding-top: 230px;
     }
     .heroTitle {
         font-size: 65px;

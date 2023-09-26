@@ -5,39 +5,42 @@ import magnify from '../../../public/taskPhoto/magnify.png';
 import row from '../../../public/taskPhoto/row.png';
 import plainTicket1 from '../../../public/taskPhoto/plainTicket1.png'
 import arrow from '../../../public/taskPhoto/arrow.png'
+import Fade from 'react-reveal/Fade';
 
 const PointTwo = () => {
     return (
         <>
             <div className='containerStyle'>
                 <div className='secondContainer'>
-                    <div className='titleSection'>
-                        <span className='title'>POINT</span>
-                    </div>
-                    <div className='titleSection'>
-                        <span className='textOne'>こんなひとにおすすめ!</span>
-                    </div>
-
+                    <Fade bottom>
+                        <div className='titleSection'>
+                            <span className='title'>POINT</span>
+                        </div>
+                        <div className='titleSection'>
+                            <span className='textOne'>こんなひとにおすすめ!</span>
+                        </div>
+                    </Fade>
                     {/* row */}
-                    <div className='rowStyle'>
-                        <div className='tickMarkRow'>
-                            <img src={tickMark} alt="" />
-                            <span className='tickMarkText'>とにか <span className='tickMarkStyle'>く安く申し込みたい方</span> </span>
+                    <Fade bottom>
+                        <div className='rowStyle'>
+                            <div className='tickMarkRow'>
+                                <img src={tickMark} alt="" />
+                                <span className='tickMarkText'>とにか <span className='tickMarkStyle'>く安く申し込みたい方</span> </span>
+                            </div>
+                            <div className='tickMarkRow'>
+                                <img src={tickMark} alt="" />
+                                <span className='tickMarkText'> <span className='tickMarkStyle'>希望の国やプラン </span>が決まっている方</span>
+                            </div>
+                            <div className='tickMarkRow'>
+                                <img src={tickMark} alt="" />
+                                <span className='tickMarkText'>現地スタッフと <span className='tickMarkStyle'>直接やりとりをしたい </span></span>
+                            </div>
+                            <div className='tickMarkRow'>
+                                <img src={tickMark} alt="" />
+                                <span className='tickMarkText'>自分のペー <span className='tickMarkStyle'>で留学プランを </span>したい方</span>
+                            </div>
                         </div>
-                        <div className='tickMarkRow'>
-                            <img src={tickMark} alt="" />
-                            <span className='tickMarkText'> <span className='tickMarkStyle'>希望の国やプラン </span>が決まっている方</span>
-                        </div>
-                        <div className='tickMarkRow'>
-                            <img src={tickMark} alt="" />
-                            <span className='tickMarkText'>現地スタッフと <span className='tickMarkStyle'>直接やりとりをしたい </span></span>
-                        </div>
-                        <div className='tickMarkRow'>
-                            <img src={tickMark} alt="" />
-                            <span className='tickMarkText'>自分のペー <span className='tickMarkStyle'>で留学プランを </span>したい方</span>
-                        </div>
-                    </div>
-
+                    </Fade>
                     {/* reason section */}
 
 
@@ -53,64 +56,62 @@ const PointTwo = () => {
 
                     <div className='backgroundPlain'>
 
-                       <div>
-                       <div className='singleRow'>
-                            <img src={magnify} alt="magnify" />
-                            <div className='rowRightSide'>
-                                <h5 className='textHandle blueText'>いつでもどこでも申し込める</h5>
-                                <img src={row} alt="" />
-                                <p className='textHandle'>語学学校/宿泊先の空き状況やキャンペーン情報をリアルタイムで知ることができるため、warpleならいつでもどこでも申し込んだり留学準備を進めることができます。</p>
+                        <div>
+                            <div className='singleRow'>
+                                <img src={magnify} alt="magnify" />
+                                <div className='rowRightSide'>
+                                    <h5 className='textHandle blueText'>いつでもどこでも申し込める</h5>
+                                    <img src={row} alt="" />
+                                    <p className='textHandle'>語学学校/宿泊先の空き状況やキャンペーン情報をリアルタイムで知ることができるため、warpleならいつでもどこでも申し込んだり留学準備を進めることができます。</p>
+                                </div>
+                            </div>
+
+
+                            <div className='singleRow'>
+                                <img src={magnify} alt="magnify" />
+                                <div className='rowRightSide'>
+                                    <h5 className='textHandle blueText'>いつでもどこでも申し込める</h5>
+                                    <img src={row} alt="" />
+                                    <p className='textHandle'>語学学校/宿泊先の空き状況やキャンペーン情報をリアルタイムで知ることができるため、warpleならいつでもどこでも申し込んだり留学準備を進めることができます。</p>
+                                </div>
+                            </div>
+
+
+                            <div className='singleRow'>
+                                <img src={magnify} alt="magnify" />
+                                <div className='rowRightSide'>
+                                    <h5 className='textHandle blueText'>いつでもどこでも申し込める</h5>
+                                    <img src={row} alt="" />
+                                    <p className='textHandle'>語学学校/宿泊先の空き状況やキャンペーン情報をリアルタイムで知ることができるため、warpleならいつでもどこでも申し込んだり留学準備を進めることができます。</p>
+                                </div>
                             </div>
                         </div>
-
-
-                        <div className='singleRow'>
-                            <img src={magnify} alt="magnify" />
-                            <div className='rowRightSide'>
-                                <h5 className='textHandle blueText'>いつでもどこでも申し込める</h5>
-                                <img src={row} alt="" />
-                                <p className='textHandle'>語学学校/宿泊先の空き状況やキャンペーン情報をリアルタイムで知ることができるため、warpleならいつでもどこでも申し込んだり留学準備を進めることができます。</p>
-                            </div>
-                        </div>
-
-
-                        <div className='singleRow'>
-                            <img src={magnify} alt="magnify" />
-                            <div className='rowRightSide'>
-                                <h5 className='textHandle blueText'>いつでもどこでも申し込める</h5>
-                                <img src={row} alt="" />
-                                <p className='textHandle'>語学学校/宿泊先の空き状況やキャンペーン情報をリアルタイムで知ることができるため、warpleならいつでもどこでも申し込んだり留学準備を進めることができます。</p>
-                            </div>
-                        </div>
-                       </div>
 
 
                     </div>
 
+
                 </div>
 
-                {/* footer section */}
-                
-                
+
+
+
 
             </div>
+            {/* reason footer content */}
 
             <div className="dualImages">
                 <img className='plainOne' src={plainTicket1} alt="" />
-                 
-                    <div className='titleSection textThree'>
-                        <h3 className='textOne '>会員登録 でお得な クーポン<br/>
+
+                <div id='textThree' className='titleSection'>
+                    <h3 id='textFour'>会員登録 でお得な クーポン<br />
                         プレゼント中!</h3>
-                    </div>
-
-                    <div className='plainBTN'>
-                    <a className='BTN'>簡単30秒！会員登録 <img className='arrow' src={arrow} alt="" /> </a>
-                    </div>
-                    
-
-
-
                 </div>
+
+                <div className='plainBTN'>
+                    <a className='BTN'>簡単30秒！会員登録 <img className='arrow' src={arrow} alt="" /> </a>
+                </div>
+            </div>
 
 
         </>

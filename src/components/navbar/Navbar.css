@@ -6,8 +6,12 @@ header {
 	padding: 0 2rem;
 	background-color: rgb(255, 255, 255);
 	color: black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+#brandIcon{
+	margin-left: 100px;
 }
 
 nav a {
@@ -16,41 +20,43 @@ nav a {
 	text-decoration: none;
 }
 
-/* nav a:hover {
-	color: #1A35C9;
-} */
 
-header .nav-btn {
+header .navBtn {
 	padding: 5px;
 	cursor: pointer;
-	background: transparent;
 	border: none;
 	outline: none;
 	color: #1A35C9;
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
+	background-color: white;
 }
 
-.backGround-btn{
-    padding: 4px 20px;
-    border-radius: 20px;
-    background-color: #1A35C9;
-    color: white;
-}
-
-.backGround-btn :hover{
- color: black;
+.backGroundBtn {
+	padding: 4px 20px;
+	border-radius: 20px;
+	background-color: #1A35C9;
+	color: white;
 }
 
 header div,
 nav {
 	display: flex;
 	align-items: center;
+	margin-left: 350px;
+}
+
+#responsiveShowBtn{
+	display: none;
+	padding: 4px 10px;
+	border-radius: 20px;
+	background-color: #1A35C9;
+	color: white;
 }
 
 @media only screen and (max-width: 1024px) {
-	header .nav-btn {
+	header .navBtn {
 		visibility: visible;
 		opacity: 1;
 	}
@@ -69,20 +75,29 @@ nav {
 		background-color: white;
 		transition: 1s;
 	}
-
-	header .responsive_nav {
+	#responsiveShowBtn{
+		display: inherit;
+	}
+	#brandIcon{
+		margin: 0px;
+	}
+	header .responsiveNav {
 		transform: translateY(100vh);
 	}
 
-	nav .nav-close-btn {
+	nav .navCloseBtn {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
+		background-color: white;
 	}
 
 	nav a {
 		font-size: 1.5rem;
 	}
+
+	header div,
+	nav {
+		margin: 0px;
+	}
 }
-
-

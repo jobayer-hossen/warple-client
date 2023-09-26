@@ -23,6 +23,7 @@
 .socialLogo{
     width: 35px;
     padding: 5px;
+    opacity: 0.7;
 }
 
 .footerRightSide{
@@ -36,7 +37,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .footer {
         flex-direction: column;
         text-align: left;
@@ -45,9 +46,10 @@
 
     .footerLeftSide {
         width: 100%;
+        padding-top: 15px;
     }
     .socialIcon{
-        padding-top: 5px;
+        padding-top: 35px;
     }
     .footerRightSide{
         flex-direction: column;
